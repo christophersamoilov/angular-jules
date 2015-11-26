@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="enterStuff">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Jules</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="stuffEnterOut" ng-controller="EnterController">
+        <a href="https://youtu.be/c0LBi1MHoaU">
+            <div id="sam"></div>
+        </a>
+        <div class="stuffEnterIn">
+            <input id="name" ng-model="stuffIn" placeholder="Leave your thoughts here" />
+        </div>
+        <h2 id="showStf" ng-show="showStuff">{{showStuff}} motherfucker</h2>
+        <div class="footer">
+            <h4>Jules Winnfield meets AngularJS</h4>
+            <p>&copy; 2015</p>
+        </div>
+    </div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+
+</html>
